@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Light gray for contrast */
+    color: #333;
+  }
+  
+  /* Intro Section */
+  .intro-section {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Vibrant gradient background */
+    color: #fff; /* White text for contrast */
+    padding: 60px 20px;
+    border-bottom: 3px solid #4b0082; /* Deep purple border */
+  }
+  
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow for pop */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.15); /* Bigger zoom */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* More intense shadow on hover */
+  }
+  
+  .intro-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fddb3a; /* Vibrant yellow */
+    margin-bottom: 10px;
+    animation: bounceIn 2s ease;
+  }
+  
+  #name-anim {
+    color: #ff6f61; /* Bright coral */
+    animation: colorPulse 3s infinite alternate;
+  }
+  
+  .intro-text {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    line-height: 1.8;
+    color: #fff; /* White for readability */
+  }
+  
+  .highlight-text {
+    font-weight: bold;
+    color: #2af598; /* Bright green */
+    animation: fadeHighlight 2s ease-in-out infinite;
+  }
+  
+  #cta-button {
+    background-color: #fddb3a; /* Yellow button for contrast */
+    border: none;
+    color: #333; /* Dark text for readability */
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  #cta-button:hover {
+    background-color: #ff6f61; /* Coral hover effect */
+    color: #fff; /* White text on hover */
+    transform: scale(1.1);
+  }
+  
+  /* Animations */
+  @keyframes fadeHighlight {
+    0%, 100% {
+      color: #2af598;
+    }
+    50% {
+      color: #28a7cb;
+    }
+  }
+  
+  @keyframes colorPulse {
+    from {
+      color: #ff6f61;
+    }
+    to {
+      color: #fddb3a;
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
