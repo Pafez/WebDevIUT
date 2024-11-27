@@ -2,3 +2,19 @@
     background-blend-mode: soft-light;
     background-color: #161616;
 }
+
+.container_flex {
+    container-type: flex;
+}
+
+.navbar_nav {
+    display: flex;
+    justify-content: left;
+    padding-top: 10px;
+}
+
+.navbar_item {
+    color: blueviolet;
+    list-style: none;
+    padding-inline: 50px;
+}
